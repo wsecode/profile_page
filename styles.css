@@ -13,19 +13,30 @@ body {
 }
 /* Link Styles */
 
-a {
+
+.nav a {
   text-decoration: none;
   color: #999;
 }
-a:hover {
+.nav a:hover {
   color: #6633ff;
 }
+
+.publications a {
+  text-decoration: none;
+  color: #111199;
+}
+
+.publications a:hover {
+  color: #6633ff;
+}
+
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #222;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +54,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #999;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -55,27 +66,35 @@ a:hover {
   color: white
 }
 
-header {
+.index-header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/maddox_woods_scaled.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
+.resume-header {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
-header .profile-image {
+.index-header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid black;
   transition: all .5s;
 }
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+.index-header .profile-image:hover {
+  transform: scale(1.1);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -84,6 +103,29 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 } 
+
+.tag-line{
+  color: black;
+  padding: 10px;
+  display: table;
+  margin: 10px auto;
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+}
+
+.resume-header-name{
+  font-size: 50px;
+}
+
+.resume-tag {
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  font-family: 'Great Vibes', cursive;
+}
+
 .location {
   background-color: #222;
   color: yellow;
@@ -94,12 +136,46 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #aaa;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
   border-color: #ff99ff;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+
+.schools table {
+  text-align: center;
+  margin-left: 5%;
+  width: 100%;
+}
+.schools img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    transition: all .5s;
+}
+
+.schools h3{
+  margin-bottom: 0px;
+}
+
+.schools h4{
+  margin: 0px;
+}
+
+.schools p{
+  margin: 0px;
+}
+
+.work-experience{
+  display: table;
 }
 
 ul.skills {
@@ -118,6 +194,20 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.nav {
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+main {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+main p {
+  line-height: 1.6em;
 }
 
 footer {
@@ -170,7 +260,7 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
+  .flex-index {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
@@ -179,15 +269,24 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
-    min-height: 470px;
+  .flex-resume {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 600px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   .nav {
-    max-width: 1200px;
+    width: 100%;
     padding: 0 30px;
   }
 
+  .card{
+    min-width: 500px;
+  }
 
   main {
     padding-top: 20px;

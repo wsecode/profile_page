@@ -3,8 +3,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="resume.css">
+		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900">
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
 		<title>Will Elliott's Resume</title>
 	</head>
 	<body>
@@ -14,30 +15,78 @@
 					<li class="name">Will Elliott</li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Experience</a></li>
+					<li><a href="mailto:wsecode@gmail.com?subject=Let's%20work%20together">Contact Me</a></li>
 				</ul>
 			</nav>
-			<header>
-				<h1 class="tag name">Will Elliott</h1>
-				<p class="tag">Front-End Web Developer</p>
+			<header class="resume-header">
+				<h1 class="resume-header-name">Will Elliott</h1>
+				<h3 class="tag-line">Data science for the modern web</h3>
 			</header>
-			<main class="flex">
+			<main class="flex-resume resume">
 				<section class="card">
 					<h2>Summary of Experience</h2>
 					<hr/>
-					<ul>
-						<li>test</li>
-						<li>test</li>
-						<li>test</li>
-					</ul>
+					<p>I am a scientist with a strong teaching background and manufacturing experience, and combine these skillsets to provide data-driven insights to technical and non-technical audiences for business success.
 				</section>
-				<section class="card">
+
+				<section class="card work-experience">
+					<h2>Work Experience</h2>
+					<hr/>
+					<div class="job">
+						<h3>Intel Corporation</h3>
+						<p>Process Engineer</p>
+						<ul>
+							<li>Leveraged available data to provide routes to efficiency improvements in manufacturing</li>
+							<li>Created both desktop and web apps to support task management, communication and work planning in a manufacturing environment.</li>
+							<li>Maintained production equipment to <em>Copy Exactly!</em> standards leveraging ample tool data to identify and correct mismatches in process equipment.
+							</li>
+							<li>Worked to improve wafer-level yield of Intel's 10nm process node.</li>
+						</ul>
+					</div>
+					<div class="job">
+						<h3>UC Santa Barbara</h3>
+						<p>Graduate Student Researcher/Teaching Assistant</p>
+						<ul>
+							<li>Taught advanced physical chemistry courses to students with limited backgrounds in mathematics.</li>
+							<li>Did advanced reserach in electrochemical catalysis for alternative energy applications.</li>
+							<li>Built custom experimental apparatus to monitor gas produced by a reaction using commercially available sensors and a raspberry pi running a custom python script to log data and control reaction chamber pressure.
+							</li>
+						</ul>
+					</div>
+					
+				</section>
+
+				<section class="card schools">
 					<h2>Education</h2>
 					<hr/>
-					<div class="university"><img src="images/UO_logo.jpg" class="uni-logo">
-						<h3>Bachelor of Science - Chemistry</h3>
-					</div>
-					<h4>University of Oregon</h4>
-					<h5>2013</h5>
+					<table>
+						<tr>
+							<td><img src="images/UCSB_logo.jpg" alt="UC Santa Barbaralogo"></td>
+							<td>
+							<h3>Doctor of Philosophy</h3>
+							<h4>Chemistry of Materials</h4>
+							<p>UC Santa Barbara - 2018</p>
+						</td>
+						<tr>
+							<td><img src="images/UO_logo1.png" alt="University of Oregon logo"></td>
+							<td>
+							<h3>Bachelor of Science</h3>
+							<h4>Chemistry</h4>
+							<p>University of Oregon - 2013</p>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section class="card publications">
+					<h2>Publications</h2>
+					<hr/>
+					<ul>
+						<li><a href="https://www.sciencedirect.com/science/article/pii/S0021951719300600" target="_blank">Changes in the structure of electrodeposited manganese oxide water oxidation catalysts revealed by in-operando Raman spectroscopy</a></li>
+						<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/advs.201700362" target="_blank">Earth‐Abundant Tin Sulfide‐Based Photocathodes for Solar Hydrogen Production</a></li>
+						<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201704073" target="_blank">Stable Heterometallic Cluster Ions based on Werner's Hexol</a></li>
+						<li><a href="https://www.sciencedirect.com/science/article/pii/S002196141500213X" target="_blank">Heat capacities and thermodynamics of formation of <em>flat</em>-Al<sub>13</sub> nitrate – [Al<sub>13</sub>(OH)<sub>24</sub>(H<sub>2</sub>O)<sub>24</sub>](NO<sub>3</sub>)<sub>15</sub>·11H<sub>2</sub>O</a></li>
+					</ul>
 				</section>
 			</main>
 	     	<footer>
